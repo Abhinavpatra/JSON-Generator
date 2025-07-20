@@ -13,7 +13,6 @@ export default async function getJSON ({schema, count}: { schema: string; count:
         If an array is inferred, include 1-3 relevant items.
         Ensure the output is *only* the JSON array, with no additional text, markdown wrappers (like \`\`\`json), or formatting outside the JSON itself.`;
 
-  
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash",
     contents:prompt,
