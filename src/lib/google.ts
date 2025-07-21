@@ -22,6 +22,5 @@ export default async function getJSON ({schema, count}: { schema: string; count:
       },
     }
   });
-  console.log(response.text);
   return response.text;
 }
